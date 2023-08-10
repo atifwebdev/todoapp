@@ -11,7 +11,7 @@ app.use(express.json());
 //     res.send("Hello ToDo App");
 // });
 app.get('/', express.static('public'));
-app.use('/', express.static('public'));
+// app.use('/', express.static('public'));
 app.use('/static', express.static('static'));
 
 app.use((req, res) => {
